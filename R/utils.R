@@ -13,6 +13,7 @@ output_submission_csv <- function(data, output_dir) {
 #'
 #' Log into Synapse. Assumes credentials are stored.
 #'
+#' @export
 #' @return Synapse login object from
 log_into_synapse <- function() {
   synapse <- reticulate::import("synapseclient")
